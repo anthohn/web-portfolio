@@ -1,5 +1,5 @@
 export default function Home() {
-  return (<main className="f">
+  return (<main className="">
     </main>
   )
 }
