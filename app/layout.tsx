@@ -16,12 +16,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className}
       bg-gray-50 
       text-gray-950 
         relative
         h-[5000px]
+        pt-28
+        sm:pt-36
         `}>
         <div className='
           bg-[#fbe2e3]
@@ -35,9 +37,7 @@ export default function RootLayout({
           blur-[10rem]
           sm:w-[68.75rem]
         '>
-
         </div>
-
         <div className='
           bg-[#dbd7fd]
           absolute
@@ -54,10 +54,10 @@ export default function RootLayout({
           xl:left[-15rem]
           2xl:left-[-5rem]
         '>
-
         </div>
-        <Header />
-        {children}
+            <Header />
+            {/* page is the children of layout */}
+            {children}
         </body>
     </html>
   )
