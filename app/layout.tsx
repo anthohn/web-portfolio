@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -55,9 +56,11 @@ export default function RootLayout({
           2xl:left-[-5rem]
         '>
         </div>
+          <ActiveSectionContextProvider>
             <Header />
             {/* page is the children of layout */}
             {children}
+          </ActiveSectionContextProvider>
         </body>
     </html>
   )
