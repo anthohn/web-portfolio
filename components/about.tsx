@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("A propos");
 
   return (
     <motion.section
@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>A propos</SectionHeading>
       <p className="mb-3">
       Ayant récemment obtenu mon{" "}
-        <span className="font-medium">Certificat Fédéral de Capacité</span> en juillet 2023, 
+        <span className="font-medium">Certificat Fédéral de Capacité d&apos;informaticien d&apos;entreprise</span> en juillet 2023, 
         j&apos;ai décidé de suivre ma <span className="underline">passion</span> pour la programmation.
         Actuellement, je me prépare à intégrer une{" "}
         <span className="font-medium">école supérieure en développement d&apos;applications en 2024</span>.{" "}

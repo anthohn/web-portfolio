@@ -7,27 +7,22 @@ import P_APPRO_2Img from "@/public/P_APPRO_2.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
-
 export const links = [
   {
-    name: "Home",
+    name: "Accueil",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "A propos",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Projets",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Compétences",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",

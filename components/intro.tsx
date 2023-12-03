@@ -7,25 +7,20 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Accueil", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
-    // all the section
     <section
+      ref={ref}
       id="home"
-      className="mb-28
-        max-w-[50rem]
-        text-center
-        sm:mb-0
-        scroll-mt-[100rem
-        "
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      {/* icon on top */}
-      <div className="flex
-        items-center
-        justify-center
-        "
-      >
+      <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -37,29 +32,18 @@ export default function Intro() {
           >
             <Image
               src="/profilePic.png"
-              alt="Ricardo portrait"
+              alt="Anthony bitmoji"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="
-                h-24
-                w-24
-                rounded-full
-                object-cover
-                border-[0.35rem]
-                border-white
-                shadow-xl
-                "
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
           {/* hand emoji */}
           <motion.span
-            className="absolute 
-              bottom-0
-              right-0
-              text-4xl"
+            className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -76,14 +60,7 @@ export default function Intro() {
 
       {/* text of the section */}
       <motion.h1
-        className="
-          mb-10
-          mt-4
-          px-4
-          text-2xl
-          font-medium
-          !leading-[1.5]
-          sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -94,17 +71,7 @@ export default function Intro() {
 
       {/* button section */}
       <motion.div
-        className="
-          flex
-          flex-col
-          sm:flex-row
-          items-center
-          justify-center
-          gap-2
-          px-4
-          text-lg
-          font-mediu
-          "
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -113,33 +80,14 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group
-            bg-gray-900
-            text-white
-            px-7
-            py-3
-            flex
-            items-center
-            gap-2
-            rounded-full
-            outline-none
-            focus:scale-110
-            hover:scale-110
-            hover:bg-gray-950
-            active:scale-105
-            transition
-            "
-            onClick={() => {
-              // setActiveSection("Contact");
-              // setTimeOfLastClick(Date.now());
-            }}
-          >
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
+        >
           Contactez-moi ici{" "}
-          <BsArrowRight className="
-            opacity-70
-            group-hover:translate-x-1
-            transition"
-          />
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
           className="
