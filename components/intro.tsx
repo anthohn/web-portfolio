@@ -65,7 +65,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Salut, je m&apos;appelle Anthony Höhn.</span> Je suis étudiant en{" "}
-        <span className="font-bold">développement full-stack.{" "}</span> 
+        <span className="font-bold">gestion informatique.{" "}</span> 
         J&apos;ai une passion pour la création de <span className="italic">sites web et d&apos;applications.</span>
       </motion.h1>
 
