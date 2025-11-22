@@ -7,6 +7,11 @@ import P_APPRO_2Img from "@/public/P_APPRO_2.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
+import mariusOllivierImg from "@/public/marius-ollivier.png";
+import djangoXCloneImg from "@/public/django-x-clone.png";
+import openhubImg from "@/public/openhub.png";
+import humanaServicesImg from "@/public/humana-services.png";
+
 export const links = [
   {
     name: "Accueil",
@@ -31,6 +36,34 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Marius Ollivier",
+    description:
+      "Portfolio minimaliste et élégant pour un photographe suisse, mettant en valeur ses œuvres avec des animations fluides.",
+    tags: ["Next.js", "Tailwind", "Framer Motion", "React"],
+    imageUrl: mariusOllivierImg,
+  },
+  {
+    title: "Django X Clone",
+    description:
+      "Un clone fonctionnel de Twitter (X) développé avec Django, incluant les fonctionnalités sociales de base.",
+    tags: ["Django", "Python", "HTML", "CSS", "SQLite"],
+    imageUrl: djangoXCloneImg,
+  },
+  {
+    title: "OpenHub",
+    description:
+      "Plateforme collaborative dédiée aux outils libres, permettant aux utilisateurs de découvrir et partager des solutions open source.",
+    tags: ["Laravel", "React", "Tailwind", "Full Stack", "Open Source", "Community"],
+    imageUrl: openhubImg,
+  },
+  {
+    title: "Humana Services",
+    description:
+      "Site vitrine moderne pour une entreprise de services à domicile, axé sur l'accessibilité et une présentation claire des prestations.",
+    tags: ["Next.js", "Tailwind", "React", "TypeScript"],
+    imageUrl: humanaServicesImg,
+  },
   {
     title: "livraisons-locales",
     description:
