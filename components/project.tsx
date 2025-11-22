@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -28,46 +30,47 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-8 sm:mb-16 last:mb-0 w-full max-w-[50rem] mx-auto"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        {/* text div */}
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          {/* tags */}
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <Link href={link} target="_blank" className="block h-full">
+        <article className="bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/5 rounded-2xl overflow-hidden hover:bg-white/80 dark:hover:bg-white/10 transition-colors duration-300 shadow-lg hover:shadow-xl flex flex-col sm:flex-row h-full">
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
+          {/* Content Section */}
+          <div className="flex-1 flex flex-col justify-between p-6 sm:p-8 sm:h-auto">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                {title}
+              </h3>
+              <p className="text-gray-600 dark:text-white/70 leading-relaxed mb-6">
+                {description}
+              </p>
+            </div>
 
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+            <ul className="flex flex-wrap gap-2 mt-auto">
+              {tags.map((tag, index) => (
+                <li
+                  className="bg-black/[0.05] dark:bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-gray-700 dark:text-white/80 rounded-full"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        group-even:right-[initial] group-even:-left-40"
-        />
-      </section>
+          {/* Image Section */}
+          <div className="relative w-full sm:w-[45%] h-64 sm:h-auto overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <Image
+              src={imageUrl}
+              alt={`Project ${title}`}
+              quality={95}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+
+        </article>
+      </Link>
     </motion.div>
   );
 }
