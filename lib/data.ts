@@ -37,20 +37,20 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "Humana Services",
+    description:
+      "Site vitrine moderne pour une entreprise de services à domicile, axé sur l'accessibilité et une présentation claire des prestations.",
+    tags: ["Next.js", "Tailwind", "React", "TypeScript"],
+    imageUrl: humanaServicesImg,
+    link: "https://humana-services.ch",
+  },
+  {
     title: "Marius Ollivier",
     description:
       "Portfolio minimaliste et élégant pour un photographe suisse, mettant en valeur ses œuvres avec des animations fluides.",
     tags: ["Next.js", "Tailwind", "Framer Motion", "React"],
     imageUrl: mariusOllivierImg,
     link: "https://marius-ollivier.ch",
-  },
-  {
-    title: "Django X Clone",
-    description:
-      "Un clone fonctionnel de Twitter (X) développé avec Django, incluant les fonctionnalités sociales de base.",
-    tags: ["Django", "Python", "HTML", "CSS", "SQLite"],
-    imageUrl: djangoXCloneImg,
-    link: "https://github.com/anthohn/django-x-clone",
   },
   {
     title: "OpenHub",
@@ -61,12 +61,12 @@ export const projectsData = [
     link: "https://www.esig-sandbox.ch/2526_grep/t25_3_v2/",
   },
   {
-    title: "Humana Services",
+    title: "Django X Clone",
     description:
-      "Site vitrine moderne pour une entreprise de services à domicile, axé sur l'accessibilité et une présentation claire des prestations.",
-    tags: ["Next.js", "Tailwind", "React", "TypeScript"],
-    imageUrl: humanaServicesImg,
-    link: "https://humana-services.ch",
+      "Un clone fonctionnel de Twitter (X) développé avec Django, incluant les fonctionnalités sociales de base.",
+    tags: ["Django", "Python", "HTML", "CSS", "SQLite"],
+    imageUrl: djangoXCloneImg,
+    link: "https://github.com/anthohn/django-x-clone",
   },
   {
     title: "livraisons-locales",
