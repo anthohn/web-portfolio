@@ -6,6 +6,7 @@ import djangoXCloneImg from "@/public/django-x-clone.png";
 import openhubImg from "@/public/openhub.png";
 import humanaServicesImg from "@/public/humana-services.png";
 import garageMaisonBlancheImg from "@/public/garage-maison-blanche.png";
+import swissberryImg from "@/public/swissberry.png";
 
 export const links = [
   {
@@ -37,6 +38,13 @@ export const projectsData = [
     tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion"],
     imageUrl: garageMaisonBlancheImg,
     link: "https://garage-maison-blanche.ch",
+  },
+  {
+    title: "Swissberry",
+    description: "Agence de création de sites web premium spécialisée dans le développement sur mesure, l'optimisation SEO et la maintenance continue, offrant des solutions performantes et esthétiques.",
+    tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion"],
+    imageUrl: swissberryImg,
+    link: "https://swiss-berry.vercel.app/",
   },
   {
     title: "Humana Services",
