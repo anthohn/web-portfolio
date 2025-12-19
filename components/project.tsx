@@ -30,7 +30,7 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-8 sm:mb-16 last:mb-0 w-full max-w-[60rem] mx-auto"
+      className="group mb-8 sm:mb-16 last:mb-0 w-full h-[17rem] max-w-[60rem] mx-auto"
     >
       <Link href={link} target="_blank" className="block h-full">
         <article className="bg-white/50 dark:bg-white/5 rounded-2xl overflow-hidden hover:bg-white/80 dark:hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.04] flex flex-col sm:flex-row h-full">

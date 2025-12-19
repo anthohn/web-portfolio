@@ -1,16 +1,11 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import livraisonsLocalesImg from "@/public/livraisons-locales.png";
 import P_APPRO_2Img from "@/public/P_APPRO_2.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 import mariusOllivierImg from "@/public/marius-ollivier.png";
 import djangoXCloneImg from "@/public/django-x-clone.png";
 import openhubImg from "@/public/openhub.png";
 import humanaServicesImg from "@/public/humana-services.png";
+import garageMaisonBlancheImg from "@/public/garage-maison-blanche.png";
 
 export const links = [
   {
@@ -36,6 +31,13 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Garage Maison-Blanche",
+    description: "Site vitrine moderne pour un garage de réparation de voitures, mettant en valeur les services proposés avec des animations fluides.",
+    tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion"],
+    imageUrl: garageMaisonBlancheImg,
+    link: "https://garage-maison-blanche.ch",
+  },
   {
     title: "Humana Services",
     description:
