@@ -19,11 +19,13 @@ export default function About() {
     >
       <SectionHeading>À propos</SectionHeading>
       <p className="mb-3">
-      Ayant récemment obtenu mon{" "}
+        Ayant obtenu mon{" "}
         <span className="font-medium">C</span>ertificat <span className="font-medium">F</span>édéral de <span className="font-medium">C</span>apacité d&apos;informaticien d&apos;entreprise en juillet 2023, 
         j&apos;ai décidé de suivre ma <span className="underline">passion</span> pour la programmation.
-        Actuellement, je me prépare à intégrer une{" "}
-        <span className="font-medium">école supérieure en développement d&apos;applications en 2024</span>.{" "}
+        Actuellement, j&apos;ai presque terminé mon{" "}
+        <span className="font-medium">école supérieure en informatique de gestion à l&apos;ESIG à Genève</span> 
+        et je m&apos;apprête à commencer mon{" "}
+        <span className="font-medium">bachelor en informatique de gestion à la HEG</span>.{" "}
         Je me concentre également sur l&apos;apprentissage de{" "} <span className="font-medium"> React, Next.js & Django</span>
         . Je suis aussi familier avec le framework <span className="underline">Symfony</span> avec lequel j&apos;ai réalisé mon travail pratique individuel 
         <span className="font-medium"> (TPI)</span> où j&apos;ai obtenu la note de <span className="font-medium">5,6</span>
