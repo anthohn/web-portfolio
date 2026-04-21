@@ -65,7 +65,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Salut, je m&apos;appelle Anthony Höhn.</span> Je suis étudiant en{" "}
-        <span className="font-bold">gestion informatique.{" "}</span> 
+        <span className="font-bold">gestion informatique.{" "}</span>
         J&apos;ai une passion pour la création de <span className="italic">sites web et d&apos;applications.</span>
       </motion.h1>
 
@@ -102,9 +102,8 @@ export default function Intro() {
             active:scale-105
             transition
             cursor-pointer
-            borderBlack
-            dark:bg-white/10
-            dark:text-white/60"
+            borderBlack"
+
           href="https://www.linkedin.com/in/anthony-h%C3%B6hn/"
           target="_blank"
         >
@@ -127,8 +126,7 @@ export default function Intro() {
             transition
             cursor-pointer
             borderBlack
-            dark:bg-white/10
-            dark:text-white/60"
+            "
           href="https://github.com/anthohn"
           target="_blank"
         >

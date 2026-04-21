@@ -33,15 +33,15 @@ export default function Project({
       className="group mb-8 sm:mb-16 last:mb-0 w-full h-[17rem] max-w-[60rem] mx-auto"
     >
       <Link href={link} target="_blank" className="block h-full">
-        <article className="bg-white/50 dark:bg-white/5 rounded-2xl overflow-hidden hover:bg-white/80 dark:hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.04] flex flex-col sm:flex-row h-full">
+        <article className="bg-white/50 rounded-2xl overflow-hidden hover:bg-white/80 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.04] flex flex-col sm:flex-row h-full">
 
           {/* Content Section */}
           <div className="flex-1 flex flex-col justify-between p-6 sm:p-8 sm:h-auto">
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-3 dark:group-hover:text-blue-400 transition-colors">
+              <h3 className="text-2xl font-bold text-gray-800 mb-3 transition-colors">
                 {title}
               </h3>
-              <p className="text-gray-600 dark:text-white/70 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-6">
                 {description}
               </p>
             </div>
@@ -49,7 +49,7 @@ export default function Project({
             <ul className="flex flex-wrap gap-2 mt-auto">
               {tags.map((tag, index) => (
                 <li
-                  className="bg-black/[0.05] dark:bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-gray-700 dark:text-white/80 rounded-full"
+                  className="bg-black/[0.05] px-3 py-1 text-xs font-medium uppercase tracking-wider text-gray-700 rounded-full"
                   key={index}
                 >
                   {tag}
