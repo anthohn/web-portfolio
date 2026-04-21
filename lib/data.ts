@@ -6,6 +6,7 @@ import djangoXCloneImg from "@/public/django-x-clone.png";
 import openhubImg from "@/public/openhub.png";
 import humanaServicesImg from "@/public/humana-services.png";
 import garageMaisonBlancheImg from "@/public/garage-maison-blanche.png";
+import stationMaisonBlancheImg from "@/public/station-maisonblanche.png";
 import swissberryImg from "@/public/swissberry.png";
 
 export const links = [
@@ -32,6 +33,13 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Station Maison-Blanche",
+    description: "Site vitrine moderne pour une station-service, mettant en valeur les services proposés avec des animations fluides.",
+    tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion", "Gemini 3.1 Pro"],
+    imageUrl: stationMaisonBlancheImg,
+    link: "https://station-maisonblanche.ch",
+  },
   {
     title: "Garage Maison-Blanche",
     description: "Site vitrine moderne pour un garage de réparation de voitures, mettant en valeur les services proposés avec des animations fluides.",
