@@ -31,10 +31,10 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group relative mb-8 sm:mb-16 last:mb-0 w-full sm:h-[20rem] max-w-[60rem] mx-auto"
+      className="group relative mb-8 sm:mb-16 last:mb-0 w-full max-w-[60rem] mx-auto"
     >
-      <Link href={link} target="_blank" className="block sm:h-full">
-        <article className="bg-white/50 rounded-2xl overflow-hidden hover:bg-white/80 transition-all duration-300 shadow-lg hover:shadow-xl sm:group-hover:scale-[1.04] flex flex-col-reverse sm:flex-row h-auto sm:h-[20rem]">
+      <Link href={link} target="_blank" className="block">
+        <article className="bg-white/70 backdrop-blur-[10px] border border-black/5 rounded-2xl overflow-hidden hover:bg-white/90 transition-all duration-300 shadow-xl hover:shadow-2xl sm:group-hover:scale-[1.02] flex flex-col-reverse sm:flex-row h-auto">
 
           {/* Content Section */}
           <div className="flex-1 flex flex-col justify-between p-6 sm:p-8 sm:max-w-[50%]">
@@ -60,7 +60,7 @@ export default function Project({
           </div>
 
           {/* Image Section */}
-          <div className="relative w-full sm:w-[50%] h-48 sm:h-auto overflow-hidden">
+          <div className="relative w-full sm:w-[50%] aspect-video overflow-hidden border-b sm:border-b-0 sm:border-l border-black/10">
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <Image
               src={imageUrl}
