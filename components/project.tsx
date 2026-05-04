@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & { priority?: boolean };
 
 export default function Project({
   title,
@@ -14,6 +14,7 @@ export default function Project({
   tags,
   imageUrl,
   link,
+  priority,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -30,7 +31,7 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-8 sm:mb-16 last:mb-0 w-full h-[17rem] max-w-[60rem] mx-auto"
+      className="group relative mb-8 sm:mb-16 last:mb-0 w-full h-[17rem] max-w-[60rem] mx-auto"
     >
       <Link href={link} target="_blank" className="block h-full">
         <article className="bg-white/50 rounded-2xl overflow-hidden hover:bg-white/80 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.04] flex flex-col sm:flex-row h-full">
@@ -65,6 +66,7 @@ export default function Project({
               src={imageUrl}
               alt={`Project ${title}`}
               quality={95}
+              priority={priority}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500"
             />
           </div>

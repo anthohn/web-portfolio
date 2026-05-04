@@ -10,12 +10,12 @@ export default function Projects() {
   const { ref } = useSectionInView("Projets", 0.5);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28 relative">
       <SectionHeading>Mes projets</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
-            <Project {...project} />
+            <Project {...project} priority={index === 0} />
           </React.Fragment>
         ))}
       </div>
