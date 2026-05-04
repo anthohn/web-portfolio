@@ -31,13 +31,13 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group relative mb-8 sm:mb-16 last:mb-0 w-full h-[17rem] max-w-[60rem] mx-auto"
+      className="group relative mb-8 sm:mb-16 last:mb-0 w-full sm:h-[20rem] max-w-[60rem] mx-auto"
     >
-      <Link href={link} target="_blank" className="block h-full">
-        <article className="bg-white/50 rounded-2xl overflow-hidden hover:bg-white/80 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.04] flex flex-col sm:flex-row h-full">
+      <Link href={link} target="_blank" className="block sm:h-full">
+        <article className="bg-white/50 rounded-2xl overflow-hidden hover:bg-white/80 transition-all duration-300 shadow-lg hover:shadow-xl sm:group-hover:scale-[1.04] flex flex-col-reverse sm:flex-row h-auto sm:h-[20rem]">
 
           {/* Content Section */}
-          <div className="flex-1 flex flex-col justify-between p-6 sm:p-8 sm:h-auto">
+          <div className="flex-1 flex flex-col justify-between p-6 sm:p-8 sm:max-w-[50%]">
             <div>
               <h3 className="text-2xl font-bold text-gray-800 mb-3 transition-colors">
                 {title}
@@ -60,14 +60,14 @@ export default function Project({
           </div>
 
           {/* Image Section */}
-          <div className="relative w-full sm:w-[50%] h-64 sm:h-auto overflow-hidden">
+          <div className="relative w-full sm:w-[50%] h-48 sm:h-auto overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <Image
               src={imageUrl}
               alt={`Project ${title}`}
               quality={95}
               priority={priority}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
           </div>
 
