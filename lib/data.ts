@@ -5,9 +5,10 @@ import mariusOllivierImg from "@/public/marius-ollivier.png";
 import djangoXCloneImg from "@/public/django-x-clone.png";
 import openhubImg from "@/public/openhub.png";
 import humanaServicesImg from "@/public/humana-services.png";
-import garageMaisonBlancheImg from "@/public/garage-maison-blanche.png";
+import garageMaisonBlancheImg from "@/public/garage-maisonblanche.png";
 import stationMaisonBlancheImg from "@/public/station-maisonblanche.png";
 import swissberryImg from "@/public/swissberry.png";
+import gabrielSanchezImg from "@/public/gabriel-sanchez.png";
 
 export const links = [
   {
@@ -33,6 +34,14 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Gabriel Sanchez",
+    description:
+      "Site vitrine luxueux pour un artisan bijoutier-sertisseur suisse, présentant des créations de haute joaillerie avec une expérience utilisateur immersive et raffinée.",
+    tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion"],
+    imageUrl: gabrielSanchezImg,
+    link: "https://gabriel-sanchez.ch",
+  },
   {
     title: "Station Maison-Blanche",
     description: "Site vitrine moderne pour une station-service, mettant en valeur les services proposés avec des animations fluides.",
