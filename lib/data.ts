@@ -98,7 +98,7 @@ export const projectsData = [
   {
     title: "livraisons-locales",
     description:
-      "J'ai travaillé en tant que ful-stack dev sur ce TPI. App web dotée d'un système de commande des produits auprès des agriculteurs, intégrant une API dédiée pour la gestion des livraisons.",
+      "J'ai travaillé en tant que full-stack dev sur ce TPI. App web dotée d'un système de commande des produits auprès des agriculteurs, intégrant une API dédiée pour la gestion des livraisons.",
     tags: ["Symfony", "API Google", "PHP", "Tailwind", "MySQL"],
     imageUrl: livraisonsLocalesImg,
     link: "https://github.com/anthohn/tpi-livraisons-locales",
