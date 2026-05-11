@@ -1,3 +1,5 @@
+import charismaBeforeImg from "@/public/charisma-coiffure/1-avant.png";
+import charismaAfterImg from "@/public/charisma-coiffure/1-apres.png";
 import livraisonsLocalesImg from "@/public/livraisons-locales.png";
 import P_APPRO_2Img from "@/public/P_APPRO_2.png";
 
@@ -35,10 +37,22 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "Charisma Coiffure",
+    description:
+      "Refonte complète de l'identité visuelle d'un salon de coiffure mobile. J'ai transformé une image datée en une marque moderne et haut de gamme, incluant un nouveau site web optimisé.",
+    tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion", "Claude Design"],
+    imageUrl: charismaAfterImg,
+    link: "https://charisma-coiffure.vercel.app",
+    rebrand: {
+      before: charismaBeforeImg,
+      after: charismaAfterImg,
+    },
+  },
+  {
     title: "Gabriel Sanchez",
     description:
       "Site vitrine luxueux pour un artisan bijoutier-sertisseur suisse, présentant des créations de haute joaillerie avec une expérience utilisateur immersive et raffinée.",
-    tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion"],
+    tags: ["Next.js", "Tailwind", "React", "TypeScript", "Framer Motion", "Claude Design"],
     imageUrl: gabrielSanchezImg,
     link: "https://gabriel-sanchez.ch",
   },
