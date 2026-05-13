@@ -13,7 +13,7 @@
     "clsx": "^2.1.1",
     "entities": "^7.0.0",
     "framer-motion": "^12.23.26",
-    "next": "^16.1.0",
+    "next": "^16.2.6",
     "react": "^19",
     "react-dom": "^19",
     "react-hot-toast": "^2.6.0",
@@ -32,7 +32,7 @@
     "autoprefixer": "^10.4.23",
     "eslint": "^9",
     "eslint-config-next": "16.1.0",
-    "postcss": "^8",
+    "postcss": "^8.5.14",
     "tailwindcss": "^4.1.18",
     "typescript": "^5"
   }
